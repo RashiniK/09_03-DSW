@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lange"pt-br">
+    <head>
+        <title>xcss Template</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+
+            img{
+                margin-top: 45px;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-size: Arial, helvetica, sans-serif;
+            }
+
+            /* style the header*/
+            header{
+                background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font: 35px;
+                color: white;
+            }
+
+            /* container for flexboxes */
+            section {
+                display: -webkit-flex;
+                display: flex;
+            }
+            /* style the navigation menu */
+            nav {
+                -webkit-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                background: #ccc;
+                padding: 20px;
+            }
+
+            /* Style the list inside menu */
+            nav ul{
+                list-style-type: none;
+                padding: 0;
+
+            }
+            /* Style the content */
+            article {
+                -webkit-box-flex: 3;
+                -ms-flex: 3;
+                flex: 3;
+                background-color: #f1f1f1;
+                padding: 10px;
+            }
+
+            /* Style the footer */
+            footer{
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+
+            }
+            /* layout responsivo - do menu e do conteúdo dentro da seção */
+            @media (max-width: 600px) {
+                section {
+                    -webkit-flex-direction: column;
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Cidades</h2>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#1">Aracaju</a></li>
+                    <li><a href="#2">Santos</a></li>
+                    <li><a href="#3">Kyoto</a></li>
+                </ul>
+            </nav>
+
+
+            <article>
+                <hi id="1">Aracaju</h1>
+                <p>Fundação: 17 de março de 1855 (168 anos)</p>
+                <p style="margin-bottom: 35px;">Aracaju é a capital do estado de Sergipe, na costa nordeste do Brasil. É conhecida pelas praias, incluindo a Praia de Atalaia, ao centro. Junto à praia, o Oceanário de Aracaju, em forma de tartaruga, possui arraias, tubarões, enguias e tartarugas marinhas, além de exposições práticas. O passeio na marginal, a Passarela do Caranguejo, está repleta de restaurantes de peixe e marisco e é marcada por uma enorme escultura de um caranguejo</p>
+                <img src="Aracaju.png" width="440" height="260" >
+                <img src="aracaju praia.jpg" width="440" height="260" >
+                <img src="aracaju caju.jpg" width="440" height="260" >
+            </article>
+
+
+            <article>
+                <hi id="2">Santos</h1>
+                <p>Distrito criado com a denominação de Santos em 1747.</p>
+                <p>Santos, uma cidade costeira no estado de São Paulo, no sul do Brasil, é uma importante extensão do porto marítimo que vai do continente à ilha de São Vicente. O centro urbano da ilha faz fronteira com a Baía de Santos, conhecida pela sua extensa praia e pelo jardim adjacente de 5,3 km de comprimento. O Museu do Café, que ocupa uma bolsa de mercadorias de 1922 preservada na zona histórica, explora o papel fundamental da área para o comércio de café do Brasil.</p>
+                <img src="santos.jpg" width="440" height="260" >
+                <img src="santos prai.jpg" width="440" height="260" >
+                <img src="santos porto.jpg" width="440" height="260" >
+            </article>
+
+
+
+            <article>
+                <hi id="3" >Kyoto</h1>
+                <p>A moderna cidade de Quioto foi formada em 1 de abril de 1889.</p>
+                <p style="margin-bottom: 52px;">Kyoto, antiga capital do Japão, é uma cidade da ilha de Honshu, famosa por seus vários templos clássicos budistas, jardins, palácios imperiais, santuários xintoístas e casas de madeira tradicionais. Ela também é conhecida pelas tradições formais, como o jantar kaiseki, com vários pratos específicos, e as gueixas, geralmente encontradas no distrito de Gion.
+                </p>
+                <img src="kyoto.jpg" width="440" height="260" >
+                <img src="kyoto sakura.jpg" width="440" height="260" >
+                <img src="kyoto bambu.jpg" width="440" height="260" >
+            </article>
+
+
+        </section>
+        <footer>
+            <p>Rodapé</p>
+
+            <h5 style="text-align: right; margin-right: 20px; margin-bottom: 0px;"> Créditos -Kauê Rashini</h5>
+        </footer>
+    </body>
+</html>
